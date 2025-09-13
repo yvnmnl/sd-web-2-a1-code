@@ -107,6 +107,21 @@ ul li:last-child {
   margin-bottom: 0;
 }
 
+#age-input {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  width: 175px;
+  margin-right: 0.5rem;
+}
+
+#age-submit {
+  background-color: #a3afe3;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
 #error-messages,
 #broken-array-errors {
   margin-top: 1rem;
