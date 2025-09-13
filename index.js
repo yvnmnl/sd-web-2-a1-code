@@ -143,7 +143,6 @@ function testUsersForErrors() {
   });
 }
 
-
 // 6. Test your error handling by creating a second array that's intentionally broken (missing name properties) and passing it to your functions. Verify that your error handling works correctly and displays errors in the div with id "broken-array-errors"
 function testBrokenUsers() {
   const brokenList = document.getElementById("broken-array-list");
@@ -170,4 +169,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   testUsersForErrors();   // for exercise 5
   testBrokenUsers();      // for excercise 6
+
+  const btn = document.getElementById("age-submit");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      const input = document.getElementById("age-threshold");
+      const threshold = parseInt(input.value);
+      renderByAge(users, threshold, "age-filter-list");
+    });
+  }
+  btn.addEventListener("click", () => {
+    const input = document.getElementById("age-threshold");
+    const threshold = parseInt(input.value);
+    renderByAge(users, threshold, "age-filter-list");
+  });
 });
