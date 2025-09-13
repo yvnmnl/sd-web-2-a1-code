@@ -107,7 +107,6 @@ ul li:last-child {
   margin-bottom: 0;
 }
 
-/* Error message styles */
 #error-messages,
 #broken-array-errors {
   margin-top: 1rem;
